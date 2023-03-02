@@ -19,7 +19,7 @@ Endpoint/route
 
 Associated Function
 
-getAllBooksByGenre
+getAllBooks
 
 Data Requirements
 
