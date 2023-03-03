@@ -6,11 +6,10 @@ const {
     addGenre,
     getAllBooks,
 
-} = require("./controllers")
+} = require("./controllers");
 
 // =====Routes/URL=====
 genreRouter.post("/genres/addgenre", addGenre);
 genreRouter.get("/genres/getbooksbygenre/:genre", getAllBooks);
 
-// =====Routes export=====
-module.exports = genreRouter
+module.exports = genreRouter;

@@ -12,5 +12,4 @@ const {
 authorRouter.post("/authors/addauthor", addAuthor);
 authorRouter.get("/authors/getauthorandbooks/:author", getAuthorAndBooks);
 
-// =====Exports=====
 module.exports = authorRouter;

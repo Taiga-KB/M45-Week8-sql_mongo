@@ -13,16 +13,16 @@ const addGenre = async (req, res) => {
     }
 };
 
-// =====Get all books by genre=====WIP
+// =====Get all books by genre=====
 const getAllBooks = async (req, res) => {
     try {
-        const findGenre = await Genre.findOne({
+        const findGenre = await Genre.findAll({
             where: {
-                genre: req.params.title
+                genre: req.params.genre
             },
             include: Book,
         });
-        console.log(getAllBooks);
+        console.log(findGenre);
         res.status(200).json({message: "Success: All books found", booksByGenre: findGenre})
     } catch (error) {
         console.log(error);

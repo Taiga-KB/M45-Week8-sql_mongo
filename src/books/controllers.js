@@ -36,7 +36,7 @@ const getSingleBookByTitle = async (req, res) => {
     } catch (error) {
         res.status(501).json({errorMessage: error.message, error: error});
     }
-}
+};
 
 // =====Update a book dynamically=====
 const updateBook = async (req, res) => {
